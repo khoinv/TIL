@@ -49,7 +49,7 @@ class Sington(type):
     def __call__(self, *args, **kwargs):
         if self._instance is None:
             self._instance = super(Sington, self).__call__(*args, **kwargs)
-            return self._instance
+        return self._instance
 
 
 def Sington2(_class):
@@ -58,7 +58,7 @@ def Sington2(_class):
     def wraper(*args, **kwargs):
         if _class not in _instance:
             _instance[_class] = _class(*args, **kwargs)
-            return _instance[_class]
+        return _instance[_class]
     return wraper
 
 
