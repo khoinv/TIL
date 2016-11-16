@@ -110,7 +110,7 @@ def module_of_loop(func):
 
 
 @time_cal
-def test():
+def solution():
     """
     not using memorize pattern
     """
@@ -118,7 +118,7 @@ def test():
 
 
 @time_cal
-def test2():
+def solution2():
     """
     cache only (2x)^(2x) result
     """
@@ -126,28 +126,28 @@ def test2():
 
 
 @time_cal
-def test23():
+def solution23():
     """
     cache all (2x)^(2x), (3x)^(3x) result
     """
     return module_of_loop(module_of_pow_using_memorize([2, 3]))()
 
 @time_cal
-def test235():
+def solution235():
     """
     cache all (2x)^(2x), (3x)^(3x), (5x)^(5x) result
     """
     return module_of_loop(module_of_pow_using_memorize([2, 3, 5]))()
 
 @time_cal
-def test2357():
+def solution2357():
     """
     cache all (2x)^(2x), (3x)^(3x), (5x)^(5x), (7x)^(7x) result
     """
     return module_of_loop(module_of_pow_using_memorize([2, 3, 5, 7]))()
 
 @time_cal
-def test23579():
+def solution23579():
     """
     cache all (2x)^(2x), (3x)^(3x), (5x)^(5x), (7x)^(7x), (9x)^(9x) result
     """
@@ -156,17 +156,17 @@ def test23579():
 
 
 if __name__ == '__main__':
-    test()
-    test2()
-    test23()
-    test235()
-    test2357()
-    test23579()
+    solution()
+    solution2()
+    solution23()
+    solution235()
+    solution2357()
+    solution23579()
 """
-    running time of test: 14.8649618626s
-    running time of test2: 11.8096091747s
-    running time of test23: 10.0104529858s
-    running time of test235: 9.28809809685s
-    running time of test2357: 8.17507195473s
-    running time of test23579: 8.46338200569s
+    running time of solution: 14.8649618626s
+    running time of solution2: 11.8096091747s
+    running time of solution23: 10.0104529858s
+    running time of solution235: 9.28809809685s
+    running time of solution2357: 8.17507195473s
+    running time of solution23579: 8.46338200569s
 """
