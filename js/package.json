@@ -1,0 +1,16 @@
+{
+  "name": "gulp_test",
+  "version": "1.0.0",
+  "description": "create simple gulpfile for test",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp serve"
+  },
+  "author": "khoinv",
+  "license": "ISC"
+}
