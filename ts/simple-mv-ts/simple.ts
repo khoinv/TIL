@@ -137,6 +137,6 @@ abstract class BaseView implements BaseViewListener {
     }
 
     public show() {
-        this.getRootView().remove("hide");
+        this.getRootView().removeClass("hide");
     }
 }
